@@ -64,6 +64,113 @@
             Console.WriteLine("TASK 7");
             int[] masyvas2 = { 1, 2, 3, 4, 5 };
             CheckNumInArray(masyvas2, 6);
+
+            /* Task 8*/
+            Console.WriteLine("TASK 8");
+            int[] simpleArray = { 1, 2, 3, 4, 5 };
+            int[] reverseArray = new int[simpleArray.Length];
+            int index = 0;
+            for (int i = simpleArray.Length - 1; i >= 0; i--)
+            {
+                reverseArray[index++] = simpleArray[i];
+            }
+            for (int i = 0; i <= reverseArray.Length - 1; i++)
+            {
+                Console.WriteLine(reverseArray[i]);
+            }
+
+            /* Task 9*/
+            Console.WriteLine("TASK 9");
+            int[] masyvas3 = { 1, 2, 2, 3, 4, 4, 5 };
+            int[] masyvas4 = new int[6];
+            for (int ix = 0; ix <= masyvas3.Length - 1; ix++)
+            {
+                masyvas4[masyvas3[ix]]++;
+            }
+            for (int i = 0; i <= masyvas4.Length - 1; i++)
+            {
+                if (masyvas4[i] > 1)
+                {
+                    Console.WriteLine(i);
+                }
+            }
+
+            /* Task 10*/
+            Console.WriteLine("TASK 10");
+            int[] masyvas5 = { 1, 2, -3, 4, -5 };
+            int firstNegative = 0;
+            for (int i = 0; i <= masyvas5.Length; i++)
+            {
+                if (masyvas5[i] < 0)
+                {
+                    firstNegative = masyvas5[i];
+                    break;
+                }
+            }
+            Console.WriteLine(firstNegative);
+
+            /* Task 11*/
+            Console.WriteLine("TASK 11");
+            int[] masyvas6 = { 1, 2, 3, 4, 5, 6 };
+            int even = 0;
+            int odd = 0;
+            for (int i = 0; i < masyvas6.Length; i++)
+            {
+                if (masyvas6[i] % 2 == 0)
+                {
+                    even++;
+                }
+                else
+                {
+                    odd++;
+                }
+
+            }
+            Console.WriteLine($"There are {even} even and {odd} odd numbers in this array");
+
+            /* Task 12*/
+            Console.WriteLine("TASK 12");
+            int[] masyvas7 = { 3, 5, 7, 2, 8, -1, 4 };
+            int highestNum = 0;
+            int lowestNum = 0;
+            int num = 0;
+            while (num < masyvas7.Length)
+            {
+                if (highestNum < masyvas7[num])
+                {
+                    highestNum = masyvas7[num];
+                }
+
+                if (lowestNum > masyvas7[num])
+                {
+                    lowestNum = masyvas7[num];
+                }
+
+                num++;
+            }
+            Console.WriteLine($"Highest number is {highestNum} and lowest number is {lowestNum}");
+
+            /* Task 13*/
+            Console.WriteLine("TASK 13");
+            int[] masyvas8 = { 1, 3, 5, 7, 9, 11 };
+            int arraySum = 0;
+            for (int i = 0; i < masyvas8.Length; i++)
+            {
+                if (masyvas8[i] > 4 && masyvas8[i] < 10)
+                {
+                    arraySum += masyvas8[i];
+                }
+            }
+            Console.WriteLine(arraySum);
+
+            /* Task 14*/
+            Console.WriteLine("TASK 14");
+            int[] masyvas9 = { 1, 2, 2, 3, 4, 1, 5, 6 };
+            int ii = 0;
+            int num1 = 0;
+            while (ii < masyvas9.Length) {
+                break;
+            }
         }
 
         /* Task 2*/
@@ -136,5 +243,7 @@
             Console.WriteLine($"Skaičiaus {num} nėra masyve");
 
         }
+
+
     }
 }
